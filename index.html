@@ -6,10 +6,7 @@
     <!-- Bootstrap -->
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="rps.css" rel="stylesheet">
-    <script src="src/Game.js"></script>
-    <script>
-        var Game = new Game();
-    </script>
+
 </head>
 <body>
     <div class="container">
@@ -37,9 +34,9 @@
             </div>
             <div class="panel-body">
                 <ul class="list-inline">
-                    <li><a href="#" onclick="Game.startGame('Rock')"><img src="img/rock.png"></a></li>
-                    <li><a href="#" onclick="Game.startGame('Paper')"><img src="img/paper.png"></a></li>
-                    <li><a href="#" onclick="Game.startGame('Scissors')"><img src="img/scissors.png"></a></li>
+                    <li><a href="#" data-choice="Rock" class="user-choice"><img src="img/rock.png"></a></li>
+                    <li><a href="#" data-choice="Paper" class="user-choice"><img src="img/paper.png"></a></li>
+                    <li><a href="#" data-choice="Scissors" class="user-choice"><img src="img/scissors.png"></a></li>
                 </ul>
             </div>
         </div>
@@ -48,6 +45,8 @@
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="lib/jquery.min.js"></script>
+
+<script src="src/Game.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="lib/bootstrap/js/bootstrap.min.js"></script>
 </body>

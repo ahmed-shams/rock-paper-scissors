@@ -64,3 +64,10 @@ Game.prototype.getResults = function(ch1, ch2) {
     }
     return winner;
 }
+
+
+var Game = new Game();
+$('.user-choice').click(function() {
+    console.log($(this).data( "choice" ));
+    Game.startGame($(this).data( "choice" ));
+});
